@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: stg_bienici
+    columns:
+      - name: id
+        tests:
+          - primary_key

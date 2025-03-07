@@ -1,0 +1,33 @@
+my_dbt_project/
+│── models/
+│   │── staging/            # 📂 1️⃣ Données brutes nettoyées
+│   │   ├── stg_binomes.sql
+│   │   ├── stg_jeunes.sql
+│   │   ├── stg_benevoles.sql
+│   │   ├── schema.yml      # Documentation + tests
+│   │
+│   │── intermediate/       # 📂 2️⃣ Normalisation et transformations intermédiaires
+│   │   ├── int_binomes.sql
+│   │   ├── int_jeunes.sql
+│   │   ├── int_benevoles.sql
+│   │   ├── schema.yml
+│   │
+│   │── marts/              # 📂 3️⃣ Calcul des KPIs et métriques
+│   │   ├── mart_kpi_binomes.sql
+│   │   ├── mart_kpi_jeunes.sql
+│   │   ├── mart_kpi_benevoles.sql
+│   │   ├── schema.yml
+│   │
+│   │── final/              # 📂 4️⃣ Tables finales prêtes pour la BI
+│   │   ├── final_binomes.sql
+│   │   ├── final_jeunes.sql
+│   │   ├── final_benevoles.sql
+│   │   ├── schema.yml
+│   │
+│   │── utils/              # 📂 📌 (Facultatif) Fonctions et macros SQL
+│   │   ├── utils_dates.sql
+│   │   ├── macros.sql
+│
+│── dbt_project.yml         # Configuration du projet
+│── packages.yml            # Dépendances dbt (ex: dbt_utils)
+│── README.md               # Documentation du projet

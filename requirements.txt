@@ -1,0 +1,9 @@
+pymysql
+mysqlclient
+apache-airflow
+apache-airflow-providers-mysql
+mysql-connector-python
+sqlalchemy
+pandas
+requests
+tenacity
